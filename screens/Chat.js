@@ -37,7 +37,7 @@ const Chat = () => {
             console.log('snapshot');
             setMessages(
                 snapshot.docs.map(doc => ({
-                    _id: doc.id,
+                    _id: doc.data()._id,
                     createdAt: doc.data().createdAt.toDate(),
                     text: doc.data().text,
                     user: doc.data().user

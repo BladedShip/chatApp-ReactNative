@@ -219,6 +219,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('dingding.keystore')
+            storePassword 'dingding'
+            keyAlias 'dingding'
+            keyPassword 'dingding'
+        }
     }
     buildTypes {
         debug {
