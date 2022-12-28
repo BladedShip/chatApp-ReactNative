@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         marginHorizontal: 30,
+        marginTop:10
     },
     button: {
         backgroundColor: '#809BCE',
