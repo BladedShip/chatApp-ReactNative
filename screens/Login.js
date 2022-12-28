@@ -27,7 +27,7 @@ const Login = ({ navigation }) => {
                     autoCapitalize="none"
                     keyboardType="email-address"
                     textContentType="emailAddress"
-                    autoFocus={true}
+                    autoFocus={false}
                     color="#000"
                     value={email}
                     onChangeText={(text) => setEmail(text)}

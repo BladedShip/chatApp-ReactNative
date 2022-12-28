@@ -28,7 +28,7 @@ const Signup = ({ navigation }) => {
                     keyboardType="email-address"
                     textContentType="emailAddress"
                     color="#000"
-                    autoFocus={true}
+                    autoFocus={false}
                     value={email}
                     onChangeText={(text) => setEmail(text)}
                     placeholderTextColor="#F7DEB5"
