@@ -32,10 +32,12 @@ ChatStack = () => {
 }
 
 AuthStack = () => {
-  <Stack.Navigator screenOptions={{ headerShown: false }} defaultScreenOptions={Login}>
-    <Stack.Screen name="Login" component={Login} />
-    <Stack.Screen name="Signup" component={Signup} />
-  </Stack.Navigator>
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }} defaultScreenOptions={Login}>
+      <Stack.Screen name="Login" component={Login} />
+      <Stack.Screen name="Signup" component={Signup} />
+    </Stack.Navigator>
+  );
 }
 
 RootNavigator = () => {
