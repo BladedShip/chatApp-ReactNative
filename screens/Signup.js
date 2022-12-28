@@ -27,6 +27,7 @@ const Signup = ({ navigation }) => {
                     autoCapitalize="none"
                     keyboardType="email-address"
                     textContentType="emailAddress"
+                    color="#000"
                     autoFocus={true}
                     value={email}
                     onChangeText={(text) => setEmail(text)}
@@ -39,6 +40,7 @@ const Signup = ({ navigation }) => {
                     autoCorrect={false}
                     secureTextEntry={true}
                     textContentType="password"
+                    color="#000"
                     value={password}
                     onChangeText={(text) => setPassword(text)}
                     placeholderTextColor="#95B8D1"
