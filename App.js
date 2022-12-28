@@ -24,7 +24,7 @@ const AuthUserProvider = ({ children }) => {
 
 ChatStack = () => {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }} defaultScreenOptions={Home}>
+    <Stack.Navigator defaultScreenOptions={Home} screenOptions={{headerTitleAlign: 'center'}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Chat" component={Chat} />
     </Stack.Navigator>
