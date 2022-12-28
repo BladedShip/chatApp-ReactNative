@@ -5,7 +5,7 @@ import colors from '../colors';
 import { Icon } from "@rneui/themed";
 
 
-const catImageUrl = "https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d";
+const imageMdj = require("../assets/mdj.jpg");
 
 const Home = () => {
 
@@ -18,7 +18,7 @@ const Home = () => {
             ),
             headerRight: () => (
                 <Image
-                    source={{ uri: catImageUrl }}
+                    source={imageMdj}
                     style={{
                         width: 40,
                         height: 40,
