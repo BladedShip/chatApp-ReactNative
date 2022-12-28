@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, TextInput, Image, SafeAreaView, Touchab
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase.config";
 
-const bgImg = require("../assets/bgimg.jpg");
+const bgImg = require("../assets/bgimgalt.jpg");
 
 const Signup = ({ navigation }) => {
     const [email, setEmail] = useState("");
@@ -31,7 +31,7 @@ const Signup = ({ navigation }) => {
                     autoFocus={true}
                     value={email}
                     onChangeText={(text) => setEmail(text)}
-                    placeholderTextColor="#95B8D1"
+                    placeholderTextColor="#F7DEB5"
                 />
                 <TextInput
                     style={styles.input}
@@ -43,7 +43,7 @@ const Signup = ({ navigation }) => {
                     color="#000"
                     value={password}
                     onChangeText={(text) => setPassword(text)}
-                    placeholderTextColor="#95B8D1"
+                    placeholderTextColor="#F7DEB5"
                 />
                 <TouchableOpacity style={styles.button} onPress={handleSignup}>
                     <Text style={{ fontWeight: 'bold', color: '#fff', fontSize: 18 }}>Signup</Text>
@@ -51,7 +51,7 @@ const Signup = ({ navigation }) => {
                 <View style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', alignSelf: 'center' }}>
                     <Text style={{ color: 'gray', fontWeight: '600', fontSize: 14 }}>Already have an account?</Text>
                     <TouchableOpacity onPress={() => { navigation.navigate("Login") }}>
-                        <Text style={{ color: '#95B8D1', fontWeight: '600', fontSize: 14 }}> Login</Text>
+                        <Text style={{ color: '#F7DEB5', fontWeight: '600', fontSize: 14 }}> Login</Text>
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 36,
         fontWeight: 'bold',
-        color: "#809BCE",
+        color: "#EFC88B",
         alignSelf: "center",
         paddingBottom: 24,
     },
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         marginTop:10
     },
     button: {
-        backgroundColor: '#809BCE',
+        backgroundColor: '#EFC88B',
         height: 58,
         borderRadius: 10,
         justifyContent: 'center',
