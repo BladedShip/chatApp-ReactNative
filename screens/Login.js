@@ -31,7 +31,7 @@ const Login = ({ navigation }) => {
                     color="#000"
                     value={email}
                     onChangeText={(text) => setEmail(text)}
-                    placeholderTextColor="#95B8D1"
+                    placeholderTextColor="#40B885"
                 />
                 <TextInput
                     style={styles.input}
@@ -43,7 +43,7 @@ const Login = ({ navigation }) => {
                     textContentType="password"
                     value={password}
                     onChangeText={(text) => setPassword(text)}
-                    placeholderTextColor="#95B8D1"
+                    placeholderTextColor="#40B885"
                 />
                 <TouchableOpacity style={styles.button} onPress={handleLogin}>
                     <Text style={{ fontWeight: 'bold', color: '#fff', fontSize: 18 }}>Login</Text>
@@ -51,7 +51,7 @@ const Login = ({ navigation }) => {
                 <View style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', alignSelf: 'center' }}>
                     <Text style={{ color: 'gray', fontWeight: '600', fontSize: 14 }}>Don't have an account?</Text>
                     <TouchableOpacity onPress={() => { navigation.navigate("Signup") }}>
-                        <Text style={{ color: '#95B8D1', fontWeight: '600', fontSize: 14 }}> Signup</Text>
+                        <Text style={{ color: '#F67981', fontWeight: '600', fontSize: 14 }}> Signup</Text>
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 36,
         fontWeight: 'bold',
-        color: "#809BCE",
+        color: "#0EAD69",
         alignSelf: "center",
         paddingBottom: 24,
     },
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         marginHorizontal: 30,
     },
     button: {
-        backgroundColor: '#809BCE',
+        backgroundColor: '#0EAD69',
         height: 58,
         borderRadius: 10,
         justifyContent: 'center',

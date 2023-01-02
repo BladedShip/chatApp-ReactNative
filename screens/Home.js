@@ -5,7 +5,7 @@ import colors from '../colors';
 import { Icon } from "@rneui/themed";
 
 
-const imageMdj = require("../assets/mdj.jpg");
+const imageMdj = require("../assets/ff.png");
 
 const Home = () => {
 
@@ -31,12 +31,12 @@ const Home = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={{color:'#000',alignSelf:'center'}}>Let's talk some shit about people</Text>
+            <Text style={{color:'#000',alignSelf:'center'}}>Let's connect you with your favorite chefs</Text>
             <TouchableOpacity
                 onPress={() => navigation.navigate("Chat")}
                 style={styles.chatButton}
             >
-                <Text style={styles.bttext}>Shit Talk</Text>
+                <Text style={styles.bttext}>Talk to Them</Text>
                 <Icon name="chat" size={24} color={colors.lightGray} />
             </TouchableOpacity>
         </View>

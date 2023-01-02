@@ -31,7 +31,7 @@ const Signup = ({ navigation }) => {
                     autoFocus={false}
                     value={email}
                     onChangeText={(text) => setEmail(text)}
-                    placeholderTextColor="#F7DEB5"
+                    placeholderTextColor="#F67981"
                 />
                 <TextInput
                     style={styles.input}
@@ -43,7 +43,7 @@ const Signup = ({ navigation }) => {
                     color="#000"
                     value={password}
                     onChangeText={(text) => setPassword(text)}
-                    placeholderTextColor="#F7DEB5"
+                    placeholderTextColor="#F67981"
                 />
                 <TouchableOpacity style={styles.button} onPress={handleSignup}>
                     <Text style={{ fontWeight: 'bold', color: '#fff', fontSize: 18 }}>Signup</Text>
@@ -51,7 +51,7 @@ const Signup = ({ navigation }) => {
                 <View style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', alignSelf: 'center' }}>
                     <Text style={{ color: 'gray', fontWeight: '600', fontSize: 14 }}>Already have an account?</Text>
                     <TouchableOpacity onPress={() => { navigation.navigate("Login") }}>
-                        <Text style={{ color: '#F7DEB5', fontWeight: '600', fontSize: 14 }}> Login</Text>
+                        <Text style={{ color: '#40B885', fontWeight: '600', fontSize: 14 }}> Login</Text>
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 36,
         fontWeight: 'bold',
-        color: "#EFC88B",
+        color: "#FF5964",
         alignSelf: "center",
         paddingBottom: 24,
     },
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
         marginTop:10
     },
     button: {
-        backgroundColor: '#EFC88B',
+        backgroundColor: '#FF5964',
         height: 58,
         borderRadius: 10,
         justifyContent: 'center',
